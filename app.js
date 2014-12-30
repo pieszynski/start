@@ -41,7 +41,7 @@ router.all(/.*/i, function (req, res, next) {
     // TODO: kod tutaj
     console.log('fallback:404');
 
-    res.status(404).end('404: strona nie istnieje.' + (req.ctrlName ? '\r\n[ctl:' + req.ctrlName + ']' : ''));
+    res.status(404).end('404: strona nie istnieje bo nie ma pliku index.html lub nie znaleziono kontrolera.' + (req.ctrlName ? '\r\n[ctl:' + req.ctrlName + ']' : ''));
 });
 
 // przekierowanie wszystkich zapytań do routera
