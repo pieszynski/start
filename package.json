@@ -1,0 +1,8 @@
+{
+    "name" : "nodeexpress",
+    "private" : "true",
+    "dependencies" : {
+        "express" : "^4.10.6",
+        "compression": "^1.2.2"
+    }
+}
