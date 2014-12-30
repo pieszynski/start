@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" ng-app="indexModule" ng-controller="indexCtrl as main">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +34,8 @@
                 Paleta Google Design
             </a>
         </div>
+
+        <div>(3+4)*5=<span in-as-text="main.mulTwo(3+4, 5)"></span></div>
 
         <!-- JavaScript::Skrypty zewnętrzne -->
         <script type="text/javascript" src="js/vendor.min.js"></script>
