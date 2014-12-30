@@ -9,14 +9,10 @@ module.exports = function (grunt) {
                 force: true,
                 src: [
                     'js/*.min.js',
+                    'js/vendor/vendor.min.js',
                     'css/*.min.css',
-                    'index.html',
-
-                    '!js/jquery.min.js',
-                    '!js/angular.min.js',
-                    '!js/angular-touch.min.js',
-                    '!js/angular-sanitize.min.js',
-                    '!css/material-design-iconic-font.min.css'
+                    'css/vendor/vendor.min.css',
+                    'index.html'
                 ]
             }
         },
@@ -32,17 +28,17 @@ module.exports = function (grunt) {
         },
         concat: {
             vendorCss: {
-               src: ['css/material-design-iconic-font.min.css'],
-               dest: 'css/vendor.min.css'
+               src: ['css/vendor/material-design-iconic-font.min.css'],
+               dest: 'css/vendor/vendor.min.css'
             },
             vendorJs: {
                 src: [
-                    'js/jquery.min.js',
-                    'js/angular.min.js',
-                    'js/angular-touch.min.js',
-                    'js/angular-sanitize.min.js'
+                    'js/vendor/jquery.min.js',
+                    'js/vendor/angular.min.js',
+                    'js/vendor/angular-touch.min.js',
+                    'js/vendor/angular-sanitize.min.js'
                 ],
-                dest: 'js/vendor.min.js'
+                dest: 'js/vendor/vendor.min.js'
             },
             indexJs: {
                 src: 'js/index.js',
