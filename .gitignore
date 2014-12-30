@@ -26,3 +26,10 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# GRUNT Compiled elements
+css/index.min.css
+css/vendor.min.css
+index.html
+js/index.min.js
+js/vendor.min.js
