@@ -27,6 +27,9 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
+# SublimeText temp files
+start.sublime-workspace
+
 # GRUNT Compiled elements
 css/index.min.css
 css/vendor.min.css
