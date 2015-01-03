@@ -32,7 +32,7 @@ start.sublime-workspace
 
 # GRUNT Compiled elements
 css/index.min.css
-css/vendor.min.css
+css/vendor/vendor.min.css
 index.html
 js/index.min.js
-js/vendor.min.js
+js/vendor/vendor.min.js
