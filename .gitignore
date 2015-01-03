@@ -30,3 +30,11 @@ webserver/node_modules
 
 # SublimeText temp files
 start.sublime-workspace
+
+# GRUNT Compiled elements
+www/css/index.min.css
+www/css/vendor/vendor.min.css
+www/index.html
+www/js/startup.min.js
+www/js/index.min.js
+www/js/vendor/vendor.min.js
