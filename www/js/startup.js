@@ -2,6 +2,10 @@
 
     function onDeviceReady() {
 
+        document.addEventListener('pause', onPause, false);
+        document.addEventListener('backbutton', onBack, false);
+        document.addEventListener('menubutton', onMenu, false);
+
         // dodanie css
         var vendorCss = document.createElement('link');
         vendorCss.rel = 'stylesheet';
@@ -15,6 +19,15 @@
         indexJs.src = 'js/index.min.js';
         document.head.appendChild(indexJs);
     }
+
+    function onPause() {}
+
+    function onBack() {
+
+        navigator.app.exitApp();
+    }
+
+    function onMenu() {}
 
     document.addEventListener('deviceready', onDeviceReady, false);
 
