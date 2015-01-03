@@ -1,0 +1,35 @@
+@include: 'vendor/prefixer.less';
+
+@fontSize: 13px;
+
+@htmlBackgroundColor: #ccc;
+@linkColor: #bf360c;
+
+@font-face{
+    font-family:'Roboto-Regular';
+    src:url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+html {
+    background-color: @htmlBackgroundColor;
+    font-family: 'RobotoDraft','Roboto-Regular',Helvetica,Arial,sans-serif;
+    font-size: @fontSize;
+    height: 100%;
+    line-height: 24px;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: @linkColor;
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
